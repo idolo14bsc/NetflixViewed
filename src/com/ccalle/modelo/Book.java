@@ -11,17 +11,17 @@ import java.util.Date;
  *
  * @author LAB4-PC7
  */
-public class Libro {
+public class Book {
     int id;
     Date editionDate;
     String title,editorial,authors[],isbn;
     boolean readed;
     int timeReaded;
 
-    public Libro() {
+    public Book() {
     }
 
-    public Libro(int id, Date editionDate, String title, String editorial, String[] authors, String isbn, boolean readed, int timeReaded) {
+    public Book(int id, Date editionDate, String title, String editorial, String[] authors, String isbn, boolean readed, int timeReaded) {
         this.id = id;
         this.editionDate = editionDate;
         this.title = title;
