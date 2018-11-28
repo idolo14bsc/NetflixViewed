@@ -5,17 +5,29 @@
  */
 package com.ccalle.controlador;
 
+import com.ccalle.vista.*;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author LAB4-PC7
+ * @author Admin
  */
 public class Coordinador {
+
+    
+    
+    
+    
     public static void showMenu(){
+            FrmMovie movie = new FrmMovie();
+            FrmSeries series = new FrmSeries();
+            FrmBooks books = new FrmBooks();
+            FrmMagazine magazine = new FrmMagazine();
+            
         int exit=0;
-        do {        
-            System.out.println("Bienvenidos a Netflix Viewed");
+        do { 
+            System.out.println( "Bienvenidos a Netflix Viewed");
             System.out.println("Selecciona una Opcion: "
                 + "1.-Books\n" 
                 + "2.-Magazine\n" 
@@ -33,16 +45,16 @@ public class Coordinador {
                     //salir
                     break;
                 case 1:
-                    showBooks();
+                    books.setVisible(true);
                     break;
                 case 2:
-                    showMagazine();
+                    magazine.setVisible(true);
                     break;
                 case 3:
-                    showMovies();
+                    movie.setVisible(true);
                     break;   
                 case 4:
-                    showSeries();
+                    series.setVisible(true);
                     break;
                 case 5:
                     break;
@@ -102,5 +114,9 @@ public class Coordinador {
         } while (exit !=0);
     }
     
+
+    
+
+
     
 }

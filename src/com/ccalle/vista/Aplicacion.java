@@ -14,7 +14,7 @@ import com.ccalle.controlador.Coordinador;
 public class Aplicacion {
     public static void main(String[] args) {
         Coordinador.showMenu();
-        
+           
     }
         
             
